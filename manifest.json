@@ -1,13 +1,4 @@
 {
-  "name": "Harold Espinoza",
-  "short_name": "hespinoza",
-  "description": "Diseñador y desarrollador web",
-  "start_url": "index.html/utm?homescreen",
-  "orientation": "portrait",
-  "display": "standalone",
-  "lang": "es",
-  "theme_color": "#fff",
-  "background_color": "#fff",
   "icons": [
     {
       "src": "img/manifest/icon_16x16.png",
@@ -59,5 +50,15 @@
       "sizes": "1024x1024",
       "type": "image/png"
     }
-  ]
+  ],
+  "name": "Harold Espinoza",
+  "short_name": "hespinoza",
+  "description": "Diseñador y desarrollador web",
+  "orientation": "portrait",
+  "display": "standalone",
+  "lang": "es",
+  "start_url": "index.html/utm?homescreen",
+  "scope": "./",
+  "theme_color": "#fff",
+  "background_color": "#fff"
 }
