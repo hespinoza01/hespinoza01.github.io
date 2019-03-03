@@ -2,7 +2,7 @@
   "name": "Harold Espinoza",
   "short_name": "hespinoza",
   "description": "Diseñador y desarrollador web",
-  "start_url": "index.html/utm?homescreen",
+  "start_url": "./utm?homescreen",
   "orientation": "portrait",
   "display": "standalone",
   "lang": "es",
