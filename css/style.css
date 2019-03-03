@@ -1,0 +1,67 @@
+*, *::before, *::after, html, body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  background-color: royalblue;
+}
+
+
+/*
+**    LOADER STYLES
+*/
+.loader{
+  position: fixed;
+  display: flex;
+  top: 0;
+  left:0;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  animation: out-loader forwards .35s 2.5s;
+  transform-origin: top center;
+}
+.logo{
+  height: 15vmax;
+  width: 15vmax;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 1px gainsboro;
+  animation: scale-logo alternate forwards .5s 1.8s;
+}
+.logo--content{ animation: rotate-logo--content alternate forwards 1.70s; }
+.logo--h-letter{ animation: translate-logo--h-letter alternate forwards 1.5s ; }
+.logo--e-letter{ animation: translate-logo--e-letter alternate forwards 1.5s ; }
+.logo, .logo--content, .logo--h-letter, .logo--e-letter{
+  transform-origin: center;
+}
+
+/*  LOADER KEYFRAMES  */
+@keyframes out-loader{
+  to{ transform: scale3d(1, 0, 1); }
+}
+@keyframes scale-logo {
+  0%{ transform: scale(1); }
+  45%{ transform: scale(1.1); }
+  100%{ transform: scale(0); }
+}
+@keyframes rotate-logo--content {
+  70%{ transform: rotate(415deg); }
+  85%{ transform: rotate(315deg); }
+  100%{ transform: rotate(360deg); }
+}
+@keyframes translate-logo--h-letter {
+  0%{ transform: translate3d(-100%, 0, 0); }
+  80%{ transform: translate3d(10px, 0, 0); }
+  100%{ transform: translate3d(-10px, 0, 0); }
+}
+@keyframes translate-logo--e-letter {
+  0%{ transform: translate3d(100%, 0, 0); }
+  80%{ transform: translate3d(-10px, 0, 0); }
+  100%{ transform: translate3d(10px, 0, 0); }
+}
