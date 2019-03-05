@@ -6,8 +6,99 @@
 
 body{
   min-height: 100vh;
-  background-color: royalblue;
   font-family: GoogleSans;
+  font-size: 16px;
+}
+
+:root{
+  --body-bgcolor: #f2f2f2;
+  --primary-color: #fff;
+  --secondary-color: #fff;
+  --secondary-color-alpha: rgba(65, 105, 225, .25);
+  --primary-text: #333;
+  --secondary-text: royalblue;
+  --shadow-color: #cdcdcd;
+  --border-color: #e6e6e6;
+  --border: 2px solid var(--border-color);
+  --border-bottom: 1px solid var(--border-color);
+  --border-secondary: 2px solid var(--primary-text);
+  --box-shadow: 1px 0 10px -5px var(--shadow-color);
+
+  /*  Social icons colors  */
+  --facebook: #3b5998;
+  --twitter: #1da1f2;
+  --instagram: #c32aa3;
+  --linkedin: #007bb5;
+  --whatsapp: #25d366;
+  --github: #333;
+  --email: #D44638;
+}
+
+
+/*
+**    SOCIAL ICONS STYLES
+*/
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.icon {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 auto;
+  fill: currentColor;
+}
+
+.link-icon {
+  --primary: #fff;
+  display: inline-block;
+  margin: 0 0.25rem;
+  padding: 0.75rem;
+  color: var(--primary);
+  background-color: transparent;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  border-color: var(--primary);
+  transform: rotate(0deg);
+  transition-property: transform, background-color, border-color;
+  transition-duration:  .35s;
+}
+.link-icon:hover{
+  transform: rotate(360deg);
+}
+
+.link-icon:hover.i-twitter{
+  background-color: var(--twitter);
+  border-color: var(--twitter);
+}
+.link-icon:hover.i-facebook{
+  background-color: var(--facebook);
+  border-color: var(--facebook);
+}
+.link-icon:hover.i-instagram{
+  background-color: var(--instagram);
+  border-color: var(--instagram);
+}
+.link-icon:hover.i-linkedin{
+  background-color: var(--linkedin);
+  border-color: var(--linkedin);
+}
+.link-icon:hover.i-whatsapp{
+  background-color: var(--whatsapp);
+  border-color: var(--whatsapp);
+}
+.link-icon:hover.i-github{
+  background-color: var(--github);
+  border-color: var(--github);
+}
+.link-icon:hover.i-email{
+  background-color: var(--email);
+  border-color: var(--email);
 }
 
 
@@ -26,6 +117,7 @@ body{
   background-color: #fff;
   animation: out-loader forwards .35s 2.5s;
   transform-origin: top center;
+  z-index: 100;
 }
 .logo{
   height: 15vmax;
@@ -65,4 +157,60 @@ body{
   0%{ transform: translate3d(100%, 0, 0); }
   80%{ transform: translate3d(-10px, 0, 0); }
   100%{ transform: translate3d(10px, 0, 0); }
+}
+
+
+
+/*
+**    BUILDING-SITE STYLES
+*/
+.building-site{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #1E71A7, #3397DA);
+  color: #fff;
+  text-align: center;
+}
+.building-site--title{
+  font-size: 7vmin;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.building-site--subtitle{
+  font-size: 2.75vmin;
+}
+.building-site--progress{
+  display: block;
+  position: relative;
+  width: 50vmin;
+  height: .55rem;
+  background-color: rgba(240, 240, 240, .25);
+  border-radius: 5px;
+  border: none;
+}
+.building-site--progress::-webkit-progress-bar, .building-site--progress::-moz-progress-bar{
+  border-radius: 5px;
+  background-color: #fff;
+}
+.building-site--progress-indicator{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50vmin;
+  margin-top: 5px;
+  margin-bottom: 5rem;
+}
+.building-site--subtitle{
+  margin-bottom: 1rem;
+}
+.building-site--social-icons{
+  width: 45vmin;
+}
+.building-site--footer{
+  position: absolute;
+  bottom: 1rem;
 }
