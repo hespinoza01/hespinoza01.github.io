@@ -11,6 +11,8 @@ body{
 }
 
 :root{
+--primary: #4169e1;
+--primary-variant: #2452dc;
   --body-bgcolor: #f2f2f2;
   --primary-color: #fff;
   --secondary-color: #fff;
@@ -186,13 +188,14 @@ body{
 .building-site--progress{
   display: block;
   position: relative;
-  width: 50vmin;
+  width: 55vmin;
   height: .55rem;
   background-color: rgba(240, 240, 240, .25);
   border-radius: 5px;
-  border: none;
 }
-.building-site--progress::-webkit-progress-bar, .building-site--progress::-moz-progress-bar{
+.building-site--progress-value{
+  width: 10%;
+  height: 100%;
   border-radius: 5px;
   background-color: #fff;
 }
@@ -200,7 +203,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 50vmin;
+  width: 55vmin;
   margin-top: 5px;
   margin-bottom: 5rem;
 }

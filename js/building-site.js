@@ -2,7 +2,7 @@ document.getElementById('main').innerHTML = `
 <section class="building-site">
       <p class="building-site--title">EN<br>CONSTRUCCIÓN</p>
       <p class="building-site--subtitle">EL SITIO ESTARÁ LISTO PRONTO</p>
-      <progress class="building-site--progress" max="100" value="10"></progress>
+      <div class="building-site--progress"><div class="building-site--progress-value"></div></div>
       <div class="building-site--progress-indicator"><span>10%</span><span>100%</span></div>
 
       <div class="building-site--social-icons">
