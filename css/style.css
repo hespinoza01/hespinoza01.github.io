@@ -23,6 +23,8 @@
   --box-shadow: 1px 0 7px -4px var(--shadow-color);
 
   --padding: .75rem;
+  --border-radius: 7px;
+  --border-rounded: 100px;
 
   /*  Social icons colors  */
   --facebook: #3b5998;
@@ -92,7 +94,7 @@ img{
   padding: 0.75rem;
   color: var(--primary);
   background-color: transparent;
-  border-radius: 50px;
+  border-radius: var(--border-rounded);
   border: 1px solid transparent;
   border-color: var(--primary);
   transform: rotate(0deg);
@@ -154,7 +156,7 @@ img{
   height: 15vmax;
   width: 15vmax;
   background-color: #fff;
-  border-radius: 50%;
+  border-radius: var(--border-rounded);
   box-shadow: 0 0 10px 1px gainsboro;
   animation: scale-logo alternate forwards .5s 1.8s;
 }
@@ -205,30 +207,32 @@ img{
   justify-content: center;
   width: 100vw;
   height: 100vh;
+  min-width: 576px;
   background: linear-gradient(180deg, #1E71A7, #3397DA);
   color: #fff;
   text-align: center;
 }
 .building-site--title{
-  font-size: 7vmin;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
 }
 .building-site--subtitle{
-  font-size: 2.75vmin;
+  font-size: 1rem;
 }
 .building-site--progress{
   display: block;
   position: relative;
   width: 55vmin;
   height: .55rem;
+  min-width: calc(576px * 0.55);
   background-color: rgba(240, 240, 240, .25);
   border-radius: 5px;
 }
 .building-site--progress-value{
   width: 10%;
   height: 100%;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   background-color: #fff;
 }
 .building-site--progress-indicator{
@@ -236,6 +240,7 @@ img{
   align-items: center;
   justify-content: space-between;
   width: 55vmin;
+  min-width: calc(576px * 0.55);
   margin-top: 5px;
   margin-bottom: 5rem;
 }
@@ -243,11 +248,11 @@ img{
   margin-bottom: 1rem;
 }
 .building-site--social-icons{
-  width: 45vmin;
+  min-width: 45vmin;
 }
 .building-site--footer{
-  position: absolute;
-  bottom: 1rem;
+  position: relative;
+  bottom: -5rem;
 }
 
 
@@ -266,7 +271,7 @@ img{
 .aside{
   width: var(--aside);
   background-color: var(--secondary);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   margin-top: 10vmin;
 }
@@ -276,7 +281,7 @@ img{
   height: 30vmin;
   margin: 0 auto;
   border: 6px solid var(--body-bgcolor);
-  border-radius: 100px;
+  border-radius: var(--border-rounded);
   transform: translateY(-10vmin);
 }
 
