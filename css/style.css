@@ -9,18 +9,20 @@
   --text-variant: #595959;
   --text-secondary: #4287EE;
 
-  --body-bgcolor: #e9f1f7;
+  --body-bgcolor: #f3f5f2;
   --primary-color: #fff;
   --secondary-color: #fff;
   --secondary-color-alpha: rgba(65, 105, 225, .25);
   --primary-text: #333;
   --secondary-text: royalblue;
-  --shadow-color: #cdcdcd;
+  --shadow-color: #696969;
   --border-color: #e6e6e6;
   --border: 2px solid var(--border-color);
   --border-bottom: 1px solid var(--border-color);
   --border-secondary: 2px solid var(--primary-text);
-  --box-shadow: 1px 0 10px -5px var(--shadow-color);
+  --box-shadow: 1px 0 7px -4px var(--shadow-color);
+
+  --padding: .75rem;
 
   /*  Social icons colors  */
   --facebook: #3b5998;
@@ -31,9 +33,11 @@
   --github: #333;
   --email: #D44638;
 
-  /* width values for aside, mainsection */
-  --mainsection: 61.804697157vw;
-  --aside: 38.195302843vw;
+  /* media steps screen */
+  --smartphones: 576px;
+  --tablets: 768px;
+  --tablets-larges: 992px;
+  --desktop: 1024px;
 }
 
 *, *::before, *::after, html, body{
@@ -252,40 +256,7 @@ img{
 **    MAIN STYLES
 */
 .main{
-  padding: .75rem;
-}
-.header{
-  width: calc(100vw - 1.5rem);
-  height: 2.5rem;
-  border-radius: 5px;
-  background-color: var(--secondary);
-}
-.header-nav{
-  display: flex;
-  height: 100%;
-  width: 50%;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.nav--item{
-  display: flex;
-  position: relative;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  color: var(--text);
-  font-weight: bold;
-  text-decoration: none;
-}
-.nav--item::before{
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  border-radius: 0 0 20px 20px;
-  top: 0;
-  left: 0;
-  background-color: var(--text);
+  padding: var(--padding);
 }
 
 
@@ -296,9 +267,25 @@ img{
   width: var(--aside);
   background-color: var(--secondary);
   border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  margin-top: 7.5vmin;
 }
 
 .aside--avatar{
-  width: 2rem;
-  height: 2rem;
+  width: 25vmin;
+  height: 25vmin;
+  margin: 0 auto;
+  border: 6px solid var(--body-bgcolor);
+  border-radius: 100px;
+  transform: translateY(-7.5vmin);
+}
+
+@media (max-width: 576px){
+  :root{
+    /* width values for aside, mainsection */
+    --mainsection: calc(100vw - (var(--padding) * 2px));
+    --mainsection-large: 61.804697157vw;
+    --aside: calc(100vw - (var(--padding) * 2px));
+    --aside-large: 38.195302843vw;
+  }
 }
