@@ -298,12 +298,12 @@ img{
   text-align: center;
 }
 
-.aside--information{
+.subsection{
   width: 95%;
   margin-top: 2.5rem;
   transform: translateX(-1rem);
 }
-.information__title{
+.subsection__title{
   position: relative;
   width: 100%;
   border-bottom: var(--border-bottom);
@@ -313,7 +313,7 @@ img{
   text-align: right;
   margin-bottom: 1rem;
 }
-.information__title::before{
+.subsection__title::before{
   content: '';
   position: absolute;
   height: 3px;
@@ -322,14 +322,14 @@ img{
   bottom: -3px;
   right: 0;
 }
-.information__item{
+.subsection__item{
   position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   margin: 1.5rem 0;
 }
-.information__item::before{
+.subsection__item::before{
   content: '';
   position: absolute;
   height: 1.5px;
