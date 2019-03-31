@@ -338,10 +338,33 @@ img{
   right: 0;
   background-color: var(--border-color);
 }
-.information__item--text{
+.subsection__item--text{
   text-align: right;
   margin-right: .75rem;
 }
+
+/*
+**  UTILS CLASS
+*/
+.ta-left{
+  text-align: left;
+}
+
+.fz-20{ font-size: 20px; }
+
+.mr-05{ margin-right: .5rem; }
+.mr-1{ margin-right: 1rem; }
+.mr-2{ margin-right: 2rem; }
+.mr-3{ margin-right: 3rem; }
+.mr-4{ margin-right: 4rem; }
+.mr-5{ margin-right: 5rem; }
+
+.ml-05{ margin-left: .5rem; }
+.ml-1{ margin-left: 1rem; }
+.ml-2{ margin-left: 2rem; }
+.ml-3{ margin-left: 3rem; }
+.ml-4{ margin-left: 4rem; }
+.ml-5{ margin-left: 5rem; }
 
 @media (max-width: 576px){
   :root{
