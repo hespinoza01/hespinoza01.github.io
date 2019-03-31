@@ -198,7 +198,7 @@ img{
 /*
 **    BUILDING-SITE STYLES
 */
-.building-site{
+/*.building-site{
   position: fixed;
   left: 0;
   top: 0;
@@ -208,7 +208,7 @@ img{
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  min-width: 576px;
+  min-width: 470px;
   background: linear-gradient(180deg, #1E71A7, #3397DA);
   color: #fff;
   text-align: center;
@@ -258,7 +258,7 @@ img{
 .building-site .link-icon{
   color: #fff;
   border-color: currentColor;
-}
+}*/
 
 
 /*
