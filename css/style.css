@@ -339,8 +339,11 @@ img{
   background-color: var(--border-color);
 }
 .subsection__item--text{
-  text-align: right;
   margin-right: .75rem;
+}
+.subsection__item--text--header{
+  font-weight: bold;
+  text-align: right;
 }
 
 /*
