@@ -341,6 +341,7 @@ img{
 .subsection__item--text{
   margin-right: .75rem;
   width: 80%;
+  text-align: right;
 }
 .subsection__item--text_content{
   display: flex;
@@ -385,7 +386,12 @@ img{
 .ml-4{ margin-left: 4rem; }
 .ml-5{ margin-left: 5rem; }
 
-@media (max-width: 576px){
+/*
+    MEDIA QUERY'S DEVICE RULES
+*/
+
+/* SMARTPHONE SMALL */
+@media (min-width: 320px) and (max-width: 480px){
   :root{
     /* width values for aside, mainsection */
     --mainsection: calc(100vw - (var(--padding) * 2px));
@@ -394,3 +400,20 @@ img{
     --aside-large: 38.195302843vw;
   }
 }
+
+/* SMARTPHONE */
+@media (min-width: 481px) /*and (max-width: 767px)*/{
+  :root{}
+
+  .main{
+    max-width: 896px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1024px){}
+
+/* DESKTOP */
+@media (min-width: 1025px){}
