@@ -340,6 +340,22 @@ img{
 }
 .subsection__item--text{
   margin-right: .75rem;
+  width: 80%;
+}
+.subsection__item--text_content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url("../img/pattern.svg") repeat-x 5px center;
+}
+.subsection__item--text_content b{
+  background-color: var(--secondary);
+}
+.subsection__item--text_content b:first-child{
+  padding-right: .35rem;
+}
+.subsection__item--text_content b:last-child{
+  padding-left: .35rem;
 }
 .subsection__item--text--header{
   font-weight: bold;
